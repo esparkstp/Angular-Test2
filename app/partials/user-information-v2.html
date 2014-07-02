@@ -1,0 +1,59 @@
+<div ng-controller="UsersRouteCtrl">
+
+    <div ng-repeat="user in users">
+
+        <!--User info-->
+        <div>First Name: {{user.FirstName}}</div>
+        <div>Last Name: {{user.LastName}}</div>
+        <div>Phone number: {{user.PhoneNumber}}</div>
+
+        <br>
+
+        <!--Delete button-->
+        <button class="btn btn-primary" ng-click="delete(user)">Delete</button>
+
+            <!--Edit button-->
+            <button class="btn btn-primary"
+                    ng-click="user.isCollapsed = !user.isCollapsed">
+                Edit
+            </button>
+
+            <!--Edit Field-->
+            <div collapse="user.isCollapsed">
+
+                <hr>
+
+                <!--Edit Field-->
+                <h4>Edit User:</h4>
+
+                <label>First Name:<input type="text" ng-model="user.FirstName"/></label>
+                <br>
+                <label>Last Name:<input type="text" ng-model="user.LastName"/></label>
+                <br>
+                <label>Phone number:<input type="text" ng-model="user.PhoneNumber"/></label>
+                <br>
+
+                <!--Submit for editing button-->
+                <button class="btn btn-success" ng-click="edit(this, user);">Submit</button>
+
+            </div>
+
+        <hr>
+
+    </div>
+
+    <!--Add New-->
+    <h4>Add new User:</h4>
+
+    <label>First Name:<input type="text" ng-model="user.FirstName"/></label>
+    <br>
+    <label>Last Name:<input type="text" ng-model="user.LastName"/></label>
+    <br>
+    <label>Phone number:<input type="text" ng-model="user.PhoneNumber"/></label>
+    <br>
+
+    <button class="btn btn-success" ng-click="add(this)">Add</button>
+
+</div>
+
+

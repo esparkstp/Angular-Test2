@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html ng-app="myApp">
+
+<head lang="en">
+
+    <!--Bootsrap CSS-->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+
+    <title>UI Router Test</title>
+
+</head>
+
+<body  ng-controller="buttonsDemoCtrl">
+
+    <div ng-include="'components/navigation/navigation.html'"> </div>
+
+
+    <div class="container starter-template">
+        <div ui-view></div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!--Bootstrap    -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- Angular -->
+    <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js"></script>-->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+
+    <!--UI-Router-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
+
+    <!--UI-Bootstrap-->
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
+
+    <!--Lodash-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
+
+    <!--App-->
+    <script src="app.js"></script>
+
+    <!--Collapse-->
+    <script src="collapse-controller.js"></script>
+
+    <!--Users-->
+    <script src="users-controller.js"></script>
+
+    <!--Navigation-->
+    <script src="components/navigation/navigation-controller.js"></script>
+
+</body>
+</html>
